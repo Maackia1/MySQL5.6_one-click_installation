@@ -139,4 +139,4 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL
 
 + 先检查 MySQL 存放路径是否有中文、空格等特殊字符，请尽量使用无空格的路径。
 
-+ 在本文档之前使用过安装版 MySQL 进行安装/卸载，**但在 安装 / 卸载 的过程中失败的问题**，本文档建议直接 **重装系统**
++ 在本文档之前使用过安装版 MySQL 进行安装/卸载，**但在 安装 / 卸载 的过程中失败**，本文档建议 **读者直接重装系统**
