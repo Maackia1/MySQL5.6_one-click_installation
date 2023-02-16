@@ -2,7 +2,7 @@
 
 + ##### MySQL 官网下载地址：[MySQL 官网](https://downloads.mysql.com/archives/installer/)
 
-+ ##### 本版本由发哥制作，在 mysql-5.6.39-winx64.zip 文件的基础上稍做改动，简化了安装过程，邵发老师的个人网站：[阿发你好](https://www.afanihao.cn)
++ ##### 本版本由 [阿发你好](https://www.afanihao.cn) 制作，在 mysql-5.6.39-winx64.zip 文件的基础上稍做改动，简化了安装过程
 
 + ##### 此数据库默认密码为空，初次登录可在 SQLyog 等工具直接登陆后，再执行 "修改root密码.sql" 文件，即可生成密码：123456。
 
