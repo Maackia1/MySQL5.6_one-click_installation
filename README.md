@@ -54,7 +54,7 @@ FLUSH PRIVILEGES;
 
 + 1. 下载 "MySQL5.6 免安装版 (64bit).zip" 文件后，建议将文件夹放在根目录下，如：D:\\MySQL
 
-	+ ![3](https://user-images.githubusercontent.com/95027227/219433065-68756039-4fea-41af-bb32-93be7789ab68.png|600)
+	+ ![3|600](https://user-images.githubusercontent.com/95027227/219433065-68756039-4fea-41af-bb32-93be7789ab68.png)
 
 
 + 2. 解压之后，可以看到后缀名为 ".cmd"文件，右键 "以管理员身份" 运行 "安装MySQL服务器.cmd" 文件即可完成安装。
