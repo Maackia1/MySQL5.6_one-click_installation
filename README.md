@@ -16,7 +16,7 @@
 
 
 + `1.`  作者删除了一些目录，如 docs，include...等，其中 lib 目录有 800 MB 大小，但是这并不会影响运行
-	+ 
++ 
 	+ ![1](https://user-images.githubusercontent.com/95027227/219433054-fcfb53ef-4619-4e77-834a-25ee1ec1d963.png)
 
 
