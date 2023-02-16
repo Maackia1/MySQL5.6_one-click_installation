@@ -16,11 +16,11 @@
 
 
 + `1.`  作者删除了一些目录，如 docs，include...等，其中 lib 目录有 800 MB 大小，但是这并不会影响运行
+	+ 
+	+ ![1](https://user-images.githubusercontent.com/95027227/219433054-fcfb53ef-4619-4e77-834a-25ee1ec1d963.png)
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/1.png]]
 
-
-+ `2.` 添加了一些配置文件
++ `2.` 添加了一些配置文件，仅需了解即可
 
 ~~~
  "my-default.ini" 是原有的一个参考文件
@@ -33,10 +33,10 @@
 
 + `3.` 快捷脚本使用，选中要执行的脚本，右键以管理员身份运行即可
 
-	+ ![op](博客园/MySQL/MySQL%205.7简易安装/2.png)
+	+ ![2](https://user-images.githubusercontent.com/95027227/219433060-d487cdf1-ee54-40be-95b8-62c9ec105a13.png)
 
 
-+ `4.` 更改 MySQL 数据库密码的 sql 命令如下，如需更改，替换数字 " 123456 " 并在 SQLyog 或其它工具中执行即可
++ `4.` 更改 MySQL 数据库密码的 SQL 命令如下，如需更改，替换数字 " 123456 " 并在 SQLyog 或其它工具中执行即可
 
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' IDENTIFIED BY '123456' WITH GRANT OPTION;
@@ -54,25 +54,29 @@ FLUSH PRIVILEGES;
 
 + 1. 下载 "MySQL5.6 免安装版 (64bit).zip" 文件后，建议将文件夹放在根目录下，如：D:\\MySQL
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/3.png|650]]
+	+ ![3](https://user-images.githubusercontent.com/95027227/219433065-68756039-4fea-41af-bb32-93be7789ab68.png|600)
 
 
 + 2. 解压之后，可以看到后缀名为 ".cmd"文件，右键 "以管理员身份" 运行 "安装MySQL服务器.cmd" 文件即可完成安装。
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/4.png|650]]
+	+ ![4](https://user-images.githubusercontent.com/95027227/219433076-237b983b-d2af-4c16-8eac-eff53fba6092.png)
 
 + 3. 弹出如下图所示窗口即为成功。
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/5.png|650]]
+	+ ![5](https://user-images.githubusercontent.com/95027227/219433083-4576b1a7-c88f-4f4a-908c-8155225c23e1.png)
 
 
 ***
 
 ### `Ⅲ.` 验证过程如下：
 
-+ 1. 使用快捷组合键：【Win + R】，在命令框中输入：services.msc，在服务窗口中可以看到 MySQL 服务已经正常启动
++ 1. 使用快捷组合键：【Win + R】，接着在命令框中输入：services.msc
+	+ 
+	+ ![6](https://user-images.githubusercontent.com/95027227/219433090-f02cb5e3-573a-4a08-89af-17876fd16470.png)
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/6.png|650]]
++ 2. 在服务窗口中可以看到 MySQL 服务已经正常启动
+
+	+ ![7](https://user-images.githubusercontent.com/95027227/219433097-3a6345e2-f250-4a13-884b-a820797765e0.png)
 
 ***
 
@@ -80,15 +84,15 @@ FLUSH PRIVILEGES;
 
 + 1. 此数据库默认初始密码为空，初次使用 SQLyog 工具登录 MySQL 数据库时无需密码，**注意，请在务必执行下一步
  
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/7.png|600]]
+	+ ![8](https://user-images.githubusercontent.com/95027227/219433100-efada4ec-d381-4e97-91ef-330fedf064fd.png)
 
 
 + 2. ==**注意：务必执行这一步**==，在 sqlyog 等图形化工具执行 "修改root密码.sql" 文件或直接粘贴下一步的代码，文件默认密码为：123456。
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/8.png|600]]
+	+ ![9](https://user-images.githubusercontent.com/95027227/219433106-1cb20392-8e0f-48cf-8a5a-0d301f0da08c.png)
 
 
-+ 3. 若需更改数据库密码，可将数字：" 123456 " 替换为所需密码，如【a1b2c3】
++ 3. 若需更改数据库密码，可将数字：" 123456 " 替换为所需密码，如：a1b2c3
 
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' IDENTIFIED BY 'a1b2c3' WITH GRANT OPTION;
@@ -100,7 +104,7 @@ FLUSH PRIVILEGES;
 
 + 4. 再次链接则需要密码才能成功登录
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/9.png|650]]
+	+ ![10](https://user-images.githubusercontent.com/95027227/219433110-00de58e6-6a3b-462e-b2db-18dc18ea36e0.png)
 
 ***
 
@@ -109,10 +113,10 @@ FLUSH PRIVILEGES;
 
 + 1. 如需卸载此版本的 MySQL，右键管理员身份运行 " 卸载MySQL服务.cmd "
 
-	+ ![[博客园/MySQL/MySQL 5.7简易安装/10.png|650]]
+	+ ![11](https://user-images.githubusercontent.com/95027227/219433115-7592e937-6b5b-4993-8eaa-092fe704de2f.png)
 
 
-+ 2. 在执行完后，使用快捷键【 Win + R 】输入regedit，打开注册表，使用快捷键【 Ctrl + F 】输入 MySQL，并将找到的 MySQL 文件夹删除
++ 2. 在执行完后，使用快捷键【 Win + R 】输入：regedit，打开注册表，使用快捷键【 Ctrl + F 】输入 MySQL，并将找到的 MySQL 文件夹删除
 
 	+ 一般为这三个路径（可能有所不同，删除即可）
 
@@ -122,10 +126,9 @@ HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL
 ```
 
-+ 3. 删除读者安装在电脑MySQL文件夹,如（D:\\MySQL）
++ 3. 删除读者安装在计算机中的 MySQL文件夹，如：D:\\MySQL
 
-
-+ 4. 重启电脑即可 
++ 4. 重启计算机
 
 ***
 
@@ -136,4 +139,4 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL
 
 + 先检查 MySQL 存放路径是否有中文、空格等特殊字符，请尽量使用无空格的路径。
 
-+ 在本文档之前使用过安装版 MySQL 进行安装/卸载，但安装/卸载失败的问题，本文档建议直接重装系统
++ 在本文档之前使用过安装版 MySQL 进行安装/卸载，**但在 安装 / 卸载 的过程中失败的问题**，本文档建议直接 **重装系统**
