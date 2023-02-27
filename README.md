@@ -88,12 +88,12 @@ FLUSH PRIVILEGES;
 ### `Ⅳ.` 初次登录及修改密码：
 
 
-+  `1.`  此数据库默认初始密码为空，初次使用 SQLyog 工具登录 MySQL 数据库时无需密码
++  `1.`  此数据库默认初始密码为空，**初次使用 SQLyog 工具登录 MySQL 数据库时无需密码**
 + 
 	+ ![8](https://user-images.githubusercontent.com/95027227/219694743-2ef0ece0-f4ec-4431-8615-cfad4673faad.png)
 
 
-+  `2.`  ==**注意：读者请务必执行这一步**==，在 sqlyog 等图形化工具执行 "修改root密码.sql" 文件或直接粘贴下一步的代码，文件默认密码为：123456。
++  `2.`  **注意：读者请务必执行这一步**，在 sqlyog 等图形化工具执行 "修改root密码.sql" 文件或直接粘贴下一步的代码，文件默认密码为：123456。
 + 
 	+ ![9](https://user-images.githubusercontent.com/95027227/219694745-9437cbb0-185e-4b8a-bc0d-d16eb0ab77eb.png)
 
